@@ -1,22 +1,10 @@
-<!--
-<p>list-movies works!</p>
--->
-
-<!--
-<app-nav-bar></app-nav-bar>
--->
-
 <div class="container">
     <div class="catalogue" >
         <article class="movie-container" *ngFor="let movie of moviesList">
-            <!--
-            <div class="banner-container">
-                <h2> {{movie.movie_banner}} </h2>
-            </div>
-            -->
             <div class="image-container">
                 <img class="image" src='{{movie.image}}'>
             </div>
+
             <div class="info-container">
                 <div  class="info-block">
                     <h2 class="title"> {{movie.title}} </h2>
@@ -34,12 +22,5 @@
                 </div>
             </div>
         </article>
-        <!--
-        <h2> {{movie.people}} </h2>
-        <h2> {{movie.species}} </h2>
-        <h2> {{movie.locations}} </h2>
-        <h2> {{movie.vehicles}} </h2>
-        <h2> {{movie.url}} </h2>
-        -->
     </div>
 </div>

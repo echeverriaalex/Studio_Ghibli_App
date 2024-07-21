@@ -31,6 +31,65 @@
     justify-items: center;
     align-items: center;
     
+    width: 300px;
+    height: 500px;
+    margin: 10px 10px;
+    background: red;
+    border-radius: 30px;
+}
+
+.movie-container:hover{
+    scale: 1.2;
+    transition: all 1s;
+}
+
+.image-container, .info-container{
+    width: 95%;
+}
+
+
+.image-container{
+    height: 90%;
+    background: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-container{
+    display: none;
+}
+
+
+.info-container:hover{
+    display: block;
+}
+
+
+/* __________________________________________________________________ */
+
+/*
+.catalogue{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    background: greenyellow;
+}
+
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
     width: 350px;
     height: 550px;
     margin: 10px 10px;
@@ -44,17 +103,13 @@
 
 .image-container, .info-container{
     width: 95%;
-
 }
 
 
 .image-container{
-    /*width: 90%;*/
     height: 60%;
     background: blueviolet;
-
     border-radius: 30px 30px 0px 0px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,14 +122,9 @@
 }
 
 .info-container{
-    /* width: 90%; */
     height: 38%;
-    
     background: goldenrod;
-
     border-radius: 0px 0px 30px 30px;
-
-    
 }
 
 .info-block{
@@ -83,6 +133,21 @@
     height: 95%;
     background: yellow;
 }
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
 

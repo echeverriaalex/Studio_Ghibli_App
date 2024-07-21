@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    
+    background: red;
+    padding: 30px 30px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.img-container{
+  background: violet;
+  display: flex;
+  justify-content: center;
+}
+
+.image{
+    width: 80%;
+}
+
+
+
+.text-container{
+    background: rgb(0, 26, 255);
+    
+}
+
+.text-container p{
+    font-size: 4rem;
+    text-align: center;
+    
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(15, 133, 11);
+}

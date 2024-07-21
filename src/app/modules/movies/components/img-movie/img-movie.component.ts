@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../../services/movies.service';
 
 @Component({
-  selector: 'app-list-movies',
-  templateUrl: './list-movies.component.html',
-  styleUrls: ['./list-movies.component.css']
+  selector: 'app-img-movie',
+  templateUrl: './img-movie.component.html',
+  styleUrls: ['./img-movie.component.css']
 })
-export class ListMoviesComponent implements OnInit{
+export class ImgMovieComponent implements OnInit{
 
   moviesList: Array<any> = [];
 
