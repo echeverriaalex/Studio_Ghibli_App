@@ -6,10 +6,10 @@ import { ImgMovieComponent } from './components/img-movie/img-movie.component';
 import { Error404Component } from 'src/app/shared/error404/error404.component';
 
 const routes: Routes = [
-  {path:'list', component: ListMoviesComponent},
+  {path:'list', pathMatch: 'full', component: ListMoviesComponent},
   {path:'list:id', component: ViewMovieComponent},
-  {path:'img', component: ImgMovieComponent},
-  {path:'', component: ListMoviesComponent},
+  {path:'img', pathMatch: 'full', component: ImgMovieComponent},
+  {path:'', pathMatch: 'full', component: ListMoviesComponent},
   {path:'**', component: Error404Component},
 ];
 

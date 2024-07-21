@@ -9,28 +9,36 @@
 <div class="container">
     <div class="catalogue" >
         <article class="movie-container" *ngFor="let movie of moviesList">
-            <!--
-            <div class="banner-container">
-                <h2> {{movie.movie_banner}} </h2>
-            </div>
-            -->
-            <div class="image-container">
-                <img class="image" src='{{movie.image}}'>
-            </div>
-            <div class="info-container">
-                <div  class="info-block">
-                    <h2 class="title"> {{movie.title}} </h2>
-                    <div class="titles-container">
-                        <p class="other-title"> {{movie.original_title}} </p>
-                        <p class="other-title"> {{movie.original_title_romanised}} </p>
+            <div class="movie-content">
+                <!--
+                <div class="banner-container">
+                    <h2> {{movie.movie_banner}} </h2>
+                </div>
+                -->
+                <div class="image-container">
+                    <img class="image" src='{{movie.image}}'>
+                </div>
+                <div class="info-container">
+                    <div  class="info-block">
+                        <div class="box-title">
+                            <h2 class="title"> {{movie.title}} </h2>
+                        </div>
+                        <div class="box-info">
+                            <!--
+                            <div class="titles-container">
+                                <p class="other-title"> {{movie.original_title}} </p>
+                                <p class="other-title"> {{movie.original_title_romanised}} </p>
+                            </div>
+                            -->
+                            <!-- <p> {{movie.description}} </p> -->
+                            <p> Directed by {{movie.director}} </p>
+                            <p> Produced by {{movie.producer}} </p>
+                            <p class="year"> {{movie.release_date}} </p>
+                            <p class="time"> {{movie.running_time}} min.</p>
+                            <p class="score"> Overall score {{movie.rt_score}} </p>
+                            <!-- <p> {{movie.id}} </p> -->
+                        </div>
                     </div>
-                    <!-- <p> {{movie.description}} </p> -->
-                    <p> {{movie.director}} </p>
-                    <p> {{movie.producer}} </p>
-                    <p class="year"> {{movie.release_date}} </p>
-                    <p class="time"> {{movie.running_time}} min.</p>
-                    <p class="score"> {{movie.rt_score}} </p>
-                    <!-- <p> {{movie.id}} </p> -->
                 </div>
             </div>
         </article>

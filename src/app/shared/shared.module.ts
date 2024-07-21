@@ -13,7 +13,7 @@ import { Error404Component } from './error404/error404.component';
   ],
   exports:[
     NavBarComponent,
-    Error404Component
+    Error404Component,
   ]
 })
 export class SharedModule {}

@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+
+app-list-movies{
+    background: rgb(221, 218, 218);
+}
+
 .container{
     /*
     display: flex;
@@ -10,18 +15,21 @@
     justify-content: center;
     align-items: center;
     */
-    width: 70%;
+    
     margin: 0 auto;
-    background: brown;
+    background: rgb(221, 218, 218);
 }
 
 .catalogue{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    /* gap: 10px 10px; */
-    background: greenyellow;
+    max-width: 60%;
+    background: white;
+    /* 
+    gap: 10px 10px; 
+    background: rgb(233, 120, 14);
+    */
 }
 
 .movie-container{
@@ -34,7 +42,15 @@
     width: 350px;
     height: 550px;
     margin: 10px 10px;
-    background: red;
+    /* background: red; */
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.movie-content{
+    border: 2px solid black;
+    width: 95%;
+    height: 95%;
     border-radius: 30px;
 }
 
@@ -42,18 +58,20 @@
     display: none;
 }
 
+/* 
 .image-container, .info-container{
-    width: 95%;
-
+    width: 95%; 
 }
-
+*/
 
 .image-container{
     /*width: 90%;*/
     height: 60%;
-    background: blueviolet;
+    /*background: blueviolet;*/
 
     border-radius: 30px 30px 0px 0px;
+
+    border-bottom: 4px solid black;
 
     display: flex;
     flex-direction: column;
@@ -68,20 +86,48 @@
 
 .info-container{
     /* width: 90%; */
-    height: 38%;
-    
-    background: goldenrod;
-
+    height: 40%;
+    background: rgb(194, 192, 189);
     border-radius: 0px 0px 30px 30px;
-
-    
 }
 
 .info-block{
     margin: 0 auto;
     width: 95%;
     height: 95%;
-    background: yellow;
+    /*background: yellow;*/
+}
+
+.box-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    /*background: greenyellow;*/
+
+    height: 40%;
+    
+    
+}
+
+.title{
+    text-align: center;
+    /*
+    background: red;
+    */
+    
+    font-family: "Jost", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.box-info{
+    background: green;
+    height: 60%;
 }
 
 @media (max-width: 600px) {
