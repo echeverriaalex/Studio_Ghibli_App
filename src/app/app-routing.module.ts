@@ -4,9 +4,9 @@ import { HomePageComponent } from './modules/home/components/home-page/home-page
 import { Error404Component } from './shared/error404/error404.component';
 
 const routes: Routes = [
-  
-  {path:'movies', loadChildren: ()=> import('./modules/movies/movies.module').then(m => m.MoviesModule)},
   {path: '', component: HomePageComponent},
+  {path: 'home', loadChildren: ()=> import('./modules/home/home.module').then(m => m.HomeModule)},
+  {path: 'movies', loadChildren: ()=> import('./modules/movies/movies.module').then(m => m.MoviesModule)},
   {path: '**', component: Error404Component},
 ];
 

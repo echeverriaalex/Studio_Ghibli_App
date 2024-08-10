@@ -16,8 +16,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule,
-  ],
+    SharedModule,
+],
   providers: [],
   bootstrap: [AppComponent]
 })
