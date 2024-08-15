@@ -17,7 +17,6 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     background: #aaa;
     position: relative;
     height: 500px;
@@ -60,7 +59,6 @@ section{
     background: rgb(27, 26, 26);
 }
 
-
 .hero-info,
 .container-img-hero{
     width: 50%;
@@ -72,7 +70,6 @@ section{
     justify-content: center;
     align-items: center;
 }
-
 
 .hero-info{
     display: flex;
@@ -168,7 +165,7 @@ section{
 
 
 
-@media (max-width: 500px){
+@media (max-width: 576px){
 
     main{
         padding: 20px 10px;

@@ -1,1 +1,45 @@
-<p>view-movie works!</p>
+<div class="container-catalogue">
+    <div class="catalogue">
+        <article class="movie-container" *ngFor="let movie">
+            
+            <div class="movie-content">
+                <div class="banner-container">
+                    <h2> {{movie.movie_banner}} </h2>
+                </div>
+
+                <div class="image-container">
+                    <img class="image" src='{{movie.image}}'>
+                </div>
+                
+                <div class="info-container">
+                    <div  class="info-block">
+                        <div class="box-title">
+                            <h2 class="title"> {{movie.title}} </h2>
+                        </div>
+                        <div class="box-info">
+                            <div class="titles-container">
+                                <p class="other-title"> {{movie.original_title}} </p>
+                                <p class="other-title"> {{movie.original_title_romanised}} </p>
+                            </div>
+                            
+                                 <p> {{movie.description}} </p>
+                            <p> Directed by {{movie.director}} </p>
+                            <p> Produced by {{movie.producer}} </p>
+                            <p class="year"> {{movie.release_date}} </p>
+                            <p class="time"> {{movie.running_time}} min.</p>
+                            <p class="score"> Overall score {{movie.rt_score}} </p>
+                              <p> {{movie.id}} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--
+        <h2> {{movie.people}} </h2>
+        <h2> {{movie.species}} </h2>
+        <h2> {{movie.locations}} </h2>
+        <h2> {{movie.vehicles}} </h2>
+        <h2> {{movie.url}} </h2>
+        -->
+    </div>
+</div>

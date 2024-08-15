@@ -22,4 +22,9 @@ export class ListMoviesComponent implements OnInit{
       .catch(error => console.error('Error to get movies from Studio Ghinli API ' + error));
   }
 
+  viewInfo(idMovie: string){
+    console.log("el ID de la pelicula es --> " + idMovie);
+    
+  }
+
 }
