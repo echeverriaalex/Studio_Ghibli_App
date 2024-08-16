@@ -17,11 +17,6 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #aaa;
-    position: relative;
-    height: 500px;
-    background: rgb(27, 26, 26);
-    background: pink;
 }
 
 .flex-row-center{
@@ -45,23 +40,21 @@ section{
     gap: 20px;
 }
 
-.hero, 
+.hero,
 .container-hero-info{
     display: flex;
     color:white;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px 50px;
+    gap: 10px;
+    padding: 20px;
     background: rgb(27, 26, 26);
 }
 
-.hero-info,
-.container-img-hero{
-    width: 50%;
+.hero-info{
+    width: 25%;
     height: 100%;
 }
 
@@ -69,6 +62,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .hero-info{
@@ -93,10 +89,6 @@ section{
     border: 2px solid rgb(255, 255, 255);
 }
 
-.hero-info p{
-    width: 90%;
-}
-
 .hero-info p span{
     font-weight: 600;
 }
@@ -114,8 +106,8 @@ section{
 }
 
 .img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    
 }
 
 .container-hero-info{
@@ -140,12 +132,12 @@ section{
     border: 2px solid white;
     border-radius: 20px;
     width: 300px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 20px;
+    gap: 10px;
+    padding: 20px 20px;
 }
 
 .container-hero-info h2{
@@ -171,36 +163,32 @@ section{
         padding: 20px 10px;
     }
 
-
-    section{
-        height: auto;
-    }
-
-    .hero{
+    .hero,
+    .container-hero-info{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        width: 100%;
-    }
 
+        width: 100%;
+        padding: 10px;
+    }
+    
     .hero-info,
     .container-img{
-        width: 90%;
-        height: 50%;
-    }
-
-    .hero-info h1{
-        font-size: 35px;
-    }
-
-    .container-img-hero{
-        background: red;
         width: 100%;
     }
 
 
+    .hero-info h1{
+        font-size: 30px;
+    }
+
+
+    .container-hero-info h2{
+        font-size: 20px;
+    }
 
     .container-items{
         display: flex;
@@ -212,5 +200,23 @@ section{
         /*background: lightgreen;*/
     }
 
+    .item-info{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+    
+        /*height: 250px;*/
+    }
+
+    .container-img-item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
